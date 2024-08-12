@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+
+    <form action="index.html">
+        <div>
+            <fieldset class="liste">
+                <hr class="hr">
+                <legend class="bulleListe">
+                    <p class="permier_P">  Ma todo liste </p>
+                </legend>
+               
+                <div class="inputTache">
+
+                    <label for="tache_input"> Nouvelle tâche: </label>
+                    <input type="text" name="tache" id="tache_input" placeholder="Ajouter une tache a la liste">
+                    <button type="button" id="submitButton" class="bouton_fleche"> <img src="logos/icons8-arrow-80.png" class="logo_fleche" alt=""></button>
+                    
+                </div>
+                
+                <div>
+                    <ol id="tacheListe" class="ol">
+                                                
+                      
+                        <div class="conteneur_pour-numero">1.</div>
+                        <li class="elementListeNOchecked" id="li_exemple"> 
+                            
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae non, dolores tempore laborum, asperiores natus voluptatem dolorem,
+                            placeat neque ut mollitia unde! Omnis error molestias eaque provident blanditiis, ad vel.
+                            <input type="checkbox" class="case"> 
+                            <button class="button_hidden" type="button">
+                                <img src="logos/icons8-corbeille-26.png" alt="corbeille" class="logo_poubelle">
+                            </button> 
+                        </li>
+                        
+                                              
+                  
+                        
+                        
+                    </ol>
+                </div>    
+              
+            </fieldset>
+            
+        </div>
+        
+    </form>
+    <script src="todo.js" type="module">
+        
+
+    </script>
+</body>
+</html>

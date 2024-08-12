@@ -1,0 +1,156 @@
+body{
+    background:url(IMG/background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+
+  
+
+}
+.bulleListe{
+    background-color: rgb(249, 253, 203);
+    border: 3px solid black;
+    width: 42%;
+    border-radius: 50px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.permier_P{
+    font-weight: 900;
+    font-size: large;
+    
+    
+}
+
+.hr{
+    border: 1px solid black;
+    width: 60%;
+}
+
+.inputTache{
+    border-radius: 10px;
+    background-color: rgb(231, 242, 216); 
+    padding: 0.4%;
+    height: 5vh;
+    width: 80%;
+    margin-bottom: 3%;
+    border: 2px solid black;
+    align-content: center; 
+    text-align: center;
+    
+}
+
+
+.liste{
+    
+    background-color: rgb(255, 236, 210);
+    border-radius: 24px;
+    border: 3px solid black;
+    width: 100%;
+    width: 600px;
+     /* Supprime la marge pour centrer */
+    margin: 0; 
+    /* Optionnel : ajouter un peu de padding pour l'espace intérieur */
+    padding: 0.4%;
+    /* Assure que l'élément reste centré */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.ol{
+    color:black;
+    list-style-type: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 2%;
+    display: block;
+   
+      
+   
+   
+}
+.conteneur_pour-numero {
+    border: 2px solid rgb(9, 9, 10); /* Bordure rouge pour le numéro */
+    border-right: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(255, 255, 255); 
+    width: 5%; 
+    min-width: 15px;
+    height: 44px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin-right: 0; 
+    position: relative; /* Nécessaire pour le positionnement */
+    float: left; /* Permet au numéro de flotter à gauche */
+    font-weight: bold;
+    
+}
+
+.button_hidden{
+ margin-right: 1px;
+ 
+ border-radius: 15%;
+ height: 20px;
+ background-color: rgb(226, 243, 243);
+}
+.button_hidden:hover{
+    margin-right: 1px;
+ 
+    border-radius: 15%;
+    height: 20px;
+    background-color: rgba(219, 227, 227, 0.875); 
+}
+.logo_poubelle{
+   height: 11px;
+   width: 11px;
+  
+}
+
+.logo_fleche{
+ height: 10px;
+ width: 10px;
+}
+
+
+
+.elementListeNOchecked{
+    background-color: rgb(255, 199, 199);
+    font-size: 106%;
+    min-height: 50px;
+    padding: 2%;
+    padding-right: 40px;
+    margin: 0 3% 1.2%;
+    border: 2px solid black;
+    border-top-right-radius:  24px;
+    border-bottom-right-radius:6px ;
+    border-bottom-left-radius: 6px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+   
+}
+.elementListechecked{
+    background-color: rgb(228, 245, 186);
+    text-decoration: line-through;
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border: 2px solid black;
+    border-top-right-radius:  24px;
+    border-bottom-right-radius:6px ;
+    border-bottom-left-radius: 6px;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+}
