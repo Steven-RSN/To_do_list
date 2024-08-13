@@ -9,19 +9,28 @@
     
 </head>
 <body>
-
+    <nav class="nav">
+        <div class="div_banner">
+            <div class="div_avataars"> <img src="IMG/avataaars.png" class="img_avatar"> </div>
+            <p class="P_todo">To-do list</p>
+        </div>
+        <div class="div_banner">
+            <div class="div_avataars"> <img src="IMG/avataaars.png" class="img_avatar"> </div>
+            <p class="P_todo">future nav</p>
+        </div>
+    </nav>
     <form action="index.html">
         <div>
             <fieldset class="liste">
                 <hr class="hr">
                 <legend class="bulleListe">
-                    <p class="permier_P">  Ma todo liste </p>
+                    <p class="permier_P">  Ma to-do liste </p>
                 </legend>
-               
+            
                 <div class="inputTache">
 
-                    <label for="tache_input"> Nouvelle tâche: </label>
-                    <input type="text" name="tache" id="tache_input" placeholder="Ajouter une tache a la liste">
+                    <label for="tache_input"> Nouvelle tâche:  </label>
+                    <input type="text" class="class_input"name="tache" id="tache_input" placeholder="Ajouter une tache a la liste">
                     <button type="button" id="submitButton" class="bouton_fleche"> <img src="logos/icons8-arrow-80.png" class="logo_fleche" alt=""></button>
                     
                 </div>
@@ -29,7 +38,7 @@
                 <div>
                     <ol id="tacheListe" class="ol">
                                                 
-                      
+                    
                         <div class="conteneur_pour-numero">1.</div>
                         <li class="elementListeNOchecked" id="li_exemple"> 
                             
@@ -41,13 +50,13 @@
                             </button> 
                         </li>
                         
-                                              
-                  
+                                            
+                
                         
                         
                     </ol>
                 </div>    
-              
+            
             </fieldset>
             
         </div>

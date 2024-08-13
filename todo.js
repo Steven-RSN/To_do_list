@@ -14,7 +14,8 @@ const lis=document.querySelectorAll('li')
 
 
 
-bouton_submit.addEventListener('click', function () {
+//bouton_submit.addEventListener('click',function(){  
+    const ajouter_une_nouvelle_tache = function (event) {
     event.preventDefault()
     const tache_input= document.getElementById("tache_input")
     const text = tache_input.value
@@ -68,30 +69,33 @@ bouton_submit.addEventListener('click', function () {
         
         
         new_bouton_hidden.addEventListener('click',function(){
-            newli.remove()
-            new_div.remove()
+           
+
             console.log(numero)
             console.log(liste_numero)
-            const index = liste_numero.indexOf(numero); // Trouver l'index du numéro à supprimer
+
+            const index = liste_numero.indexOf(numero); // Trouve l'index du numéro à supprimer
            
-            if (index > 0) {
+            if (index > -1) {
 
                 liste_numero.splice(index, 1); // Supprime le numéro du tableau
+                newli.remove()
+                new_div.remove()
+
+              //  for(let i=index ; i<liste_numero.length; i++){
 
 
-                for(let i=index ; i<liste_numero.length; i++){
+                  //  liste_numero[i] = liste_numero[i]-1
+                    const div_a_numero = document.querySelectorAll('.conteneur_pour-numero')
+                    
+                        div_a_numero.forEach((div,index_de_la_div)=>{
 
-
-                    liste_numero[i] = liste_numero[i]-1
-                    const div_a_numero=document.querySelectorAll('.conteneur_pour-numero')
-
-
-                    div_a_numero.forEach((div,index_de_div)=>{
-                        
-                        div.innerHTML=(index_de_div +1)+'.'
-
-                    })
-                }
+                           
+                            div.innerHTML = (index_de_la_div +1)+'*'
+                            console.log( "liste new numero div: "+index_de_la_div )
+                        })
+                      
+               // }
             }
             console.log(liste_numero)
         })
@@ -105,7 +109,7 @@ bouton_submit.addEventListener('click', function () {
     
     tache_input.value=''
    
-})
+}//)
 
 /*bouton_hidden.forEach((bouton,index_de_li)=>{
     bouton.addEventListener('click',function(){
@@ -144,3 +148,12 @@ case_a_cocher.forEach((checkbox,index)=>{
     })
 })
 
+bouton_submit.addEventListener('click',ajouter_une_nouvelle_tache )
+
+const tache_input = document.getElementById('tache_input')
+
+tache_input.addEventListener('keydown',function (event) {
+    if(event.key==='Enter')
+        ajouter_une_nouvelle_tache(event)
+    
+})

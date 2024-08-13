@@ -12,6 +12,64 @@ body{
   
 
 }
+.nav{
+ 
+    height: 100vh;
+    width: 20%;
+    position: absolute;
+    left: 0;
+    
+
+}
+.div_banner{
+    display: flex;
+    width: 8vw;
+    height: 4vw;
+    margin-bottom: 8%;
+    max-width: 115px;
+    max-height: 55px;
+    min-height: 35px;
+    min-width: 80px;
+    border: 2px solid rgba(26, 25, 25, 0.494);
+    border-left: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgba(255, 228, 166, 0.777);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 7%;
+}
+
+
+.P_todo{
+font-size: 100%;
+font-weight: 600;
+color: rgb(103, 72, 71);
+
+}
+
+.div_avataars{
+    background-color:  rgba(241, 241, 204, 0.497);
+    position: fixed;
+    right: 0.6%;
+    bottom:0.9%;
+    border: 1px solid rgba(0, 0, 0, 0.444);
+    background-position: center;
+    height: 5vh;
+    width: 5vh;
+    border-radius: 30%;
+    overflow: hidden;
+
+}
+
+.img_avatar{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 76%;
+}
+
 .bulleListe{
     background-color: rgb(249, 253, 203);
     border: 3px solid black;
@@ -45,7 +103,10 @@ body{
     text-align: center;
     
 }
+.class_input{
+    width: 10vw;
 
+}
 
 .liste{
     
@@ -53,10 +114,10 @@ body{
     border-radius: 24px;
     border: 3px solid black;
     width: 100%;
-    width: 600px;
+    width:34vw;
      /* Supprime la marge pour centrer */
     margin: 0; 
-    /* Optionnel : ajouter un peu de padding pour l'espace intérieur */
+    /*  padding pour l'espace intérieur */
     padding: 0.4%;
     /* Assure que l'élément reste centré */
     display: flex;
@@ -78,7 +139,7 @@ body{
    
 }
 .conteneur_pour-numero {
-    border: 2px solid rgb(9, 9, 10); /* Bordure rouge pour le numéro */
+    border: 2px solid rgb(9, 9, 10); /* Bordure pour le numéro */
     border-right: 0;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -97,24 +158,28 @@ body{
 }
 
 .button_hidden{
- margin-right: 1px;
- 
- border-radius: 15%;
- height: 20px;
+ display: flex;
+ margin-left: 3%;
+ border-radius: 18%;
  background-color: rgb(226, 243, 243);
+ align-items: center;
+ align-content: center;
+ padding-left: 0.8%;
+ padding-right: 0.8%;  
 }
+
+
+
 .button_hidden:hover{
-    margin-right: 1px;
- 
-    border-radius: 15%;
-    height: 20px;
+   
+    border-radius: 18%;    
     background-color: rgba(219, 227, 227, 0.875); 
 }
 .logo_poubelle{
-   height: 11px;
-   width: 11px;
-  
+   height: 18px;
+   width: 16px;
 }
+
 
 .logo_fleche{
  height: 10px;
