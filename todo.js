@@ -30,12 +30,6 @@ const ajouter_une_nouvelle_tache = function (event) {
         console.log(liste_numero)
 
 
-//TEST
-     /*   const liste_deroulante = document.getElementById('liste_deroulante')
-        const numero_deroulant = document.createElement('option')
-        numero_deroulant.innerHTML = numero+1
-        numero_deroulant.value = numero
-        liste_deroulante.appendChild(numero_deroulant) */
 
 
         const boite_task = document.createElement('div')
@@ -131,7 +125,7 @@ const ajouter_une_nouvelle_tache = function (event) {
                     div.innerHTML = (index_de_la_div +1)+'.'
                     console.log( "liste new numero div: "+index_de_la_div )
                 })
-            }, 150); // La durée de la transition doit correspondre à celle définie dans CSS
+            }, 150); 
         }
 
         boutton_up.addEventListener('click', function (event) {
@@ -162,11 +156,11 @@ const ajouter_une_nouvelle_tache = function (event) {
             console.log(numero)
             console.log(liste_numero)
 
-            const index = liste_numero.indexOf(numero); // Trouve l'index du numéro à supprimer
+            const index = liste_numero.indexOf(numero); 
            
             if (index > -1) {
 
-                liste_numero.splice(index, 1); // Supprime le numéro du tableau
+                liste_numero.splice(index, 1); 
                 newli.remove()
                 new_div.remove()
 
@@ -195,31 +189,7 @@ const ajouter_une_nouvelle_tache = function (event) {
    
 }
 
-/*bouton_hidden.forEach((bouton,index_de_li)=>{
-    bouton.addEventListener('click',function(){
-    
-        li[index_de_li].remove()
-        div_a_numero[index_de_li].remove()
-        liste_numero.splice(index_de_li,1)
-        
 
-            for(let i=index_de_li ; i<liste_numero.length; i++){
-                
-                liste_numero[i] = liste_numero[i]-1
-                const div_a_numero_new =document.querySelectorAll('.conteneur_pour-numero')
-                
-                div_a_numero_new.forEach((div,index_de_div)=>{
-                    
-                    div.innerHTML=(index_de_div+1)+'.'
-                })
-            }
-        
-
-        
-    })
-   
-
-})*/
 
 case_a_cocher.forEach((checkbox,index)=>{ 
     checkbox.addEventListener('click',function () {
